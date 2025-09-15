@@ -20,7 +20,7 @@ export function multiply(num1, num2) {
 export function vote(age) {
   if (typeof age !== "number") return "Age not valid.";
   if (age < 18) return "You must be 18 or older to vote.";
-  return "who would you like to vote for?";
+  return "Who would you like to vote for?";
 }
 
 /**

@@ -44,5 +44,5 @@ export function haveEnoughFood(backpack, people) {
       foodamount++;
     }
   }
-  return foodamoutn >= people;
+  return foodamount >= people;
 }

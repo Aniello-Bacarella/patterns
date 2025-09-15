@@ -70,7 +70,7 @@ export function getLongestString(strings) {
 export function countPresent(attendance) {
   if (!Array.isArray(attendance)) return 0;
 
-  for (let i = 0; i < attemdamce.length; i++) {
+  for (let i = 0; i < attendance.length; i++) {
     if (attendance[i] === true) {
       count++;
     }
