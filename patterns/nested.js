@@ -41,7 +41,7 @@ export function makeTriangle(size) {
 
   const triangle = [];
   for (let row = 1; row <= size; row++) {
-    triangle.push(array(row).fill("-"));
+    triangle.push(Array(row).fill("-"));
   }
   return triangle;
 }
