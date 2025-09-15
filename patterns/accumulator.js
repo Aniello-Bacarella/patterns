@@ -28,7 +28,7 @@ export function factorial(n) {
 
   let total = 1;
   for (let i = 1; i <= n; i++) {
-      total *=i;
+    total *= i;
   }
   return total;
 }
@@ -43,8 +43,8 @@ export function buildNArray(n) {
   if (typeof n !== "number") return null;
   if (n <= 0) return [];
   const total = [];
-  for (let i =1; i <= n; i++) {
-      total.push(i);
+  for (let i = 1; i <= n; i++) {
+    total.push(i);
   }
   return total;
 }
@@ -70,7 +70,12 @@ export function getLongestString(strings) {
 export function countPresent(attendance) {
   if (!Array.isArray(attendance)) return 0;
 
-  return attendance.filter(Boolean).length;
+  for (let i = 0; i < attemdamce.length; i++) {
+    if (attendance[i] === true) {
+      count++;
+    }
+  }
+  return count;
 }
 
 /**
@@ -95,7 +100,7 @@ export function complementDNA(dna) {
 
   let result = "";
   for (let base of dna) {
-    result += complement [base] || "";
-}
-return result;
+    result += complement[base] || "";
+  }
+  return result;
 }
